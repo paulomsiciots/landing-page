@@ -1,5 +1,6 @@
 /* style sheet landing-page */  
-/* #region*/
+/* #region*/ /*reset style*/
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -102,7 +103,7 @@ input, select {
     vertical-align:middle;
 }
 /* #endregion*/
-
+/* #region*/ /* header, hero */
 header {
     background-color: #1f2937;
     display:flex;
@@ -156,7 +157,8 @@ ul {
     box-sizing: border-box;
     gap: 20px;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 110%;
+    font-size: clamp(15px,2vw,20px);
+
     color:rgb(183, 190, 47);
 }
 
@@ -176,6 +178,11 @@ a:link {
    color: rgb(165, 176, 61);  
   }
 
+  .hero {
+    background-color: #1f2937;
+    padding: 20px 0px 20px;
+
+  }
 .container-description {
     display: flex;
     justify-content:space-between;
@@ -184,34 +191,50 @@ a:link {
     font-family:Arial, Helvetica, sans-serif;
     align-items: center;
     margin:5vh 15vw 10vh 15vw ;
-
+    
+}
 
 .description {
-    height: auto;
-    width: 450px;
+    width: clamp(300px, 35vw, 500px);
+    
 }
 
 .h1description { 
     color: white; 
     padding-bottom: 10px;  
     line-height: 1.1; 
-    font-size: 50px;
+    font-size: clamp(30px,4vw,45px);
+    
 }
 
 .pdescription {
     color:rgb(175, 174, 174);
-    line-height: 1.1;
     margin-bottom: 3vh;
     line-height: 1.3;
-    font-size: 20px;
+    font-size: clamp(15px,2vw,18px);
+
 }
 
 .orange-description {
-    width: 30vw;
+    width: clamp(280px, 30vw, 600px);
     height: auto;
-    min-width:300px;
     margin: 50px 0px 50px 0px;
+    border-radius: 4px;
 }
 .knowmore {
+    background-color: #04AA6D;
+    border: none;
+    color: rgb(5, 5, 5);
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
 
 }
+/* #endregion*/
+
+
