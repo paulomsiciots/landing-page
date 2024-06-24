@@ -116,7 +116,7 @@ header {
     align-items: center;
     box-sizing: border-box;
     flex-wrap: wrap;
-    margin:10px 15vw 15px 15vw ;
+    margin:30px 15vw 20px 15vw;
 
 }
 
@@ -150,15 +150,14 @@ ul {
     list-style-type: none;
 }
 .navlinks {
-    display: flex;
+    display:flex;
     align-items: center;
+    font-family:system-ui, sans-serif ;
     height: 50px;
     width: auto;
     box-sizing: border-box;
-    gap: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: clamp(15px,2vw,20px);
-
+    gap: clamp(10px,1vw, 20px);
+    font-size: clamp(14px,1.6vw,20px);
     color:rgb(183, 190, 47);
 }
 
@@ -180,31 +179,31 @@ a:link {
 
   .hero {
     background-color: #1f2937;
-    padding: 20px 0px 20px;
-
+    padding-top: 20px;
+    min-height: 440px;
+    max-height: 490px;
   }
+  
 .container-description {
-    display: flex;
+    display:flex;
     justify-content:space-between;
-    box-sizing: border;
+    box-sizing: border-box;
     flex-wrap: wrap;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:system-ui, sans-serif ;
     align-items: center;
-    margin:5vh 15vw 10vh 15vw ;
-    
+    margin:0px 15vw 0px 15vw ;
+    margin-top: clamp(1px,1vh,50px);    
 }
 
 .description {
-    width: clamp(300px, 35vw, 500px);
-    
+    width: clamp(300px, 35vw, 700px);
 }
 
 .h1description { 
     color: white; 
     padding-bottom: 10px;  
     line-height: 1.1; 
-    font-size: clamp(30px,4vw,45px);
-    
+    font-size: clamp(30px,3.4vw,60px);
 }
 
 .pdescription {
@@ -212,29 +211,219 @@ a:link {
     margin-bottom: 3vh;
     line-height: 1.3;
     font-size: clamp(15px,2vw,18px);
-
+    text-align: justify;
 }
 
 .orange-description {
-    width: clamp(280px, 30vw, 600px);
+
+    width: clamp(290px, 32vw, 650px);
     height: auto;
-    margin: 50px 0px 50px 0px;
-    border-radius: 4px;
+    border-radius: 4px;  
+    margin-top: 50px;
+    margin-bottom: 10vh;
+
+
 }
 .knowmore {
     background-color: #04AA6D;
     border: none;
-    color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
     padding: 12px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-weight:bolder;
+    font-family:system-ui, sans-serif ;
+    font-size: clamp(12px,0.9vw,30px) ;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
 
+/* #endregion*/
+/* #region*/ /*secondsection*/
+.titleimg {
+    text-align: center;
+    font-family:system-ui, sans-serif ;
+    color: rgb(21, 34, 73); 
+    font-size: clamp(26px,2.8vw,55px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgboxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing:1px;
+    color: rgb(99, 98, 98);
+    font-weight: 400;
+    text-align:start;
+}
+
+.imageone > * {
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    width: clamp(150px, 20vw, 180px);
+    border-radius: 10px;
+    margin: clamp(1.5%, 1.7% , 10%); 
+}
+.imageone > p {
+    padding: 10px;
+}
+
+.imagetwo > *{
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    width: clamp(150px, 20vw, 180px);
+    border-radius: 10px;
+    margin: clamp(1.5%, 1.7% , 10%);
+}
+.imagetwo > p {
+    padding: 10px;
+}
+
+.imagethree > * {
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    width: clamp(150px, 20vw, 180px);
+    border-radius: 10px;
+    margin: clamp(1.5%, 1.7% , 10%);
+}
+.imagethree > p {
+    padding: 10px;
+}
+
+.imagefour > * {
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    width: clamp(150px, 20vw, 180px);
+    border-radius: 10px;
+    margin: clamp(1.5%, 1.7% , 10%);
+}
+.imagefour > p {
+    padding: 10px;
+    margin-bottom: 100px;
 }
 /* #endregion*/
+/* #region*/ /*quotesection*/
 
+.quotesection {
+    display: flex;
+    box-sizing: content-box;
+    height: auto;
+    padding: 9% 20vw 9%;
+    background-color: #e1e4e7;
+} 
 
+.quote {
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
+    font-weight: lighter;
+    color: rgb(43, 43, 43);
+    font-style: italic;
+}
+
+.quote > span {
+
+    color:#040404;
+    text-align: end;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* #endregion*/
+/* #region*/ /*SignUp*/
+
+.signup {
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 6% 10vw 6%;
+    background-color: #ffffff;
+}
+
+.signupcontainer {
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(68, 139, 220);
+    border-radius: 10px;
+    gap: 6vw;
+    width: 87%;
+    height: 15vh;
+}
+
+.signupcontainer > h2 {
+    flex: 1 1 0%;
+}
+.signupcontainer > h2 {
+    flex: 1 1 70%;
+}
+.textsignup {
+    font-size: clamp(1vw,3vh,3vw);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+}
+
+.textsignup > p {
+    color: rgb(214, 222, 211);
+    margin-top: .3vh;
+}
+
+.signupbutton {
+    background-color: rgb(68, 139, 237);
+    border: solid white 2px;
+    color: rgb(255, 255, 255);
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight:bolder;
+    font-family:system-ui, sans-serif ;
+    font-size: clamp(12px,1.5vw,30px) ;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+/* #endregion*/
+/* #region*/ /*footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;    
+    width: auto;
+    text-align: justify;
+    padding: 2%;    
+}
+
+.footer > p {
+    color: rgb(200, 205, 223);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+}
+
+/* #endregion*/
